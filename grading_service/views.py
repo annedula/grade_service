@@ -8,7 +8,7 @@ def health_check(request):
     return JsonResponse(
         {
             "status": "UP",
-            "service": "<service-name>",
+            "service": "grading_service",
             "timestamp": timezone.now().strftime("%Y-%m-%dT%H:%M:%SZ"),
         },
         status=200,
